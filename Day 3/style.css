@@ -1,0 +1,53 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background: rgba(182, 124, 0, 0.2);
+}
+
+fieldset {
+    display: flex;
+    width: 650px;
+    margin: auto;
+    justify-content: space-between;
+    border: 2px solid lightblue;
+}
+
+legend {
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(41, 165, 206);
+}
+
+.right, .left{
+    padding: 0px 15px;
+}
+
+.left{
+    border-right: 2px solid lightblue;
+}
+
+.heads{
+    color: rgb(42, 153, 190);
+}
+
+p, ul li{
+    color: rgb(42, 153, 190, 0.6);
+}
+
+@media (max-width: 678px) 
+{
+    fieldset{
+        flex-direction: column;
+    }
+    .left{
+        border-right: none;
+        border-bottom: 2px solid lightblue;
+    }
+}
