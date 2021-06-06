@@ -1,0 +1,10 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    /* width: 400px; */
+    text-align: center;
+}
