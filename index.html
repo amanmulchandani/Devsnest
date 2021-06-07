@@ -1,18 +1,287 @@
+<!-- <li><a href="./Day 2/"> DAY02</a></li>
+<li><a href="./Day 3/index.html"> DAY03 (RESUME SAMPLE)</a></li>
+<li><a href="./Day 4/index.html"> DAY04 (analog clock)</a></li> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+
+    <title>Assignment Navigation</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+/* The Nav */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #8367c7;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 4rem;
+    width: 8rem;
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), 5px 5px 10px rgba(255,255,255,0.1) inset;
+    margin: 10px;
+}
+
+.card a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: #8367c7;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 50px 25px;
+    background-color: #111;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.col-left{
+    flex: 1;
+    margin-right: 25px;
+}
+
+.col-left p{
+    margin: 15px 0 30px;
+}
+
+.footer-logo{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #8367c7;
+}
+
+.social-media-list{
+    display: flex;
+}
+
+.social-media-list li{
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.social-media-list li:not(:last-child){
+    margin-right: 15px;
+}
+
+.social-media-list li:hover{
+    background-color: #111;
+}
+
+.social-media-list a{
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.social-media-list li:hover a{
+    color: #fff;
+}
+
+.col-right{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-container h4{
+    color: #8367c7;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.link-container li{
+    margin-top: 28px;
+    list-style: none;
+}
+
+.link-container a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.link-container li:hover a{
+    color: #8367c7;
+}
+
+@media (max-width: 1024px){
+    .col-left p, .link-container a{
+        font-size: 15px;
+    }
+
+    .col-left p {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    footer .container{
+        flex-direction: column;
+    }
+
+    .col-left{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .social-media-list{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .col-right{
+        width: 100%;
+        margin: 50px 0 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-right{flex-direction: column;}
+
+    .link-container:not(:last-child)
+    {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width:352px){
+    .social-media-list li{
+        width: 40px;
+        height: 40px;
+    }
+}
+    </style>
 </head>
 <body>
-    <h1>DEVSNEST FRONTEND LEARNINGS</h1>
-    <ul>
-        <!-- <li><a href="./Day 2/index.html"> DAY01</a></li> -->
-        <li><a href="Day 2/"> DAY02</a></li>
-        <li><a href="./Day 3/index.html"> DAY03 (RESUME SAMPLE)</a></li>
-        <li><a href="./Day 4/index.html"> DAY04 (analog clock)</a></li>
-    </ul>
+    <nav>
+        <div class="wrap">
+
+            <div class="logo">
+                Devsnest
+            </div>
+    </div>
+    </nav>
+
+    <section class="content">
+        <div class="card">
+            <a href="./Day 2/">DAY 2</a>
+        </div>
+        <div class="card">
+            <a href="./Day 3/">DAY 3</a>
+        </div>
+        <div class="card">
+            <a href="./Day 4/">DAY 4</a>
+        </div>
+    </section>
+    <!-- <li><a href="./Day 2/"> DAY02</a></li>
+<li><a href="./Day 3/index.html"> DAY03 (RESUME SAMPLE)</a></li>
+<li><a href="./Day 4/index.html"> DAY04 (analog clock)</a></li> -->
+
+    <footer>
+        <div class="container">
+            <div class="col-left">
+                <div class="logo footer-logo">
+                    NAV BAR
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt enim, quisquam delectus ipsa necessitatibus dignissimos cupiditate soluta alias, debitis esse omnis ab est perferendis a fuga eveniet qui amet.</p>
+                <ul class="social-media-list">
+                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-right">
+                <ul class="link-container">
+                    <h4>Solution</h4>
+                    <li><a href="#">SCRUMS</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Performance</a></li>
+                    <li><a href="#">Group Discussion</a></li>
+                </ul>
+                <ul class="link-container">
+                    <h4>Resources</h4>
+                    <li><a href="#">Stack Overflow</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="app.js" "></script> -->
 </body>
 </html>
