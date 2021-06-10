@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.frame{
+    padding: 10px;
+    width: 500px;
+}
+
+#display{
+    margin-right: 10px;
+}
+
+.screen{
+margin: auto;
+width: 95%;
+font-size: 3rem;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+height: 30px;
+padding: 10px;
+border-radius: 5px;
+
+font-weight: bold;
+overflow: hidden;
+border: 1px solid black;
+}
+
+.b1{ grid-area: b1; }
+.b2{ grid-area: b2; }
+.b3{ grid-area: b3; }
+.b4{ grid-area: b4; }
+.b5{ grid-area: b5; }
+.b6{ grid-area: b6; }
+.b7{ grid-area: b7; }
+.b8{ grid-area: b8; }
+.b9{ grid-area: b9; }
+.b0{ grid-area: b0; }
+.bdel{ grid-area: bdel; }
+.bplus{ grid-area: bplus; }
+.bdivide{ grid-area: bdivide; }
+.bminus{ grid-area: bminus; }
+.bequal{ grid-area: bequal; }
+.bpoint{ grid-area: bpoint; }
+.breset{ grid-area: breset; }
+
+.keys{
+    display: grid;
+    grid-template-areas: 
+    "b7 b8 b9 bdel"
+    "b4 b5 b6 bplus"
+    "b1 b2 b3 bminus"
+    "bpoint b0 bdivide bmultiply"
+    "breset breset bequal bequal";
+}
+
+.buttons{
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    background: lightslategray;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.buttons:hover{
+    opacity: 0.8;
+}
+
+.buttons:active{
+    background: rgb(47, 98, 150);
+    transform: translateY(1px);
+}
