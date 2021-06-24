@@ -9,19 +9,37 @@
 </head>
 <body>
     <main>
-        <div class="design">
-            <div class="container">
-                <div class="clock">
-                    <img src="./assets/images/clockcircle2x.png" alt="">
-                </div>
-                <div class="hour">
-                    <img src="./assets/images/clockhour2x.png" alt="">
-                </div>
-                <div class="minute">
-                    <img src="./assets/images/clockmin2x.png" alt="">
-                </div>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
             </div>
         </div>
     </main>
+
+    <script>
+        const deg = 6;
+        const hr = document.getElementById('hr');
+        const mn = document.getElementById('mn');
+        const sc = document.getElementById('sc');
+
+        setInterval(() =>{
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            mn.style.transform = `rotateZ(${(mm)}deg)`;
+            sc.style.transform = `rotateZ(${(ss)}deg)`;
+        })
+
+        
+    </script>
 </body>
 </html>
