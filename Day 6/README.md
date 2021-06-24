@@ -93,3 +93,36 @@ Sample Output : a ( 5 times )
  m.toString();
  console.log(m);
 ```
+
+## 5. Write a JavaScript program to find the most frequent item of an array
+``` javascript
+Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+Sample Output : a ( 5 times )
+
+```
+### Ans
+``` javascript
+  var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+ arr1.sort();
+ var count=1;
+ var newcount;
+ var precount=1;
+ var ans;
+ for(i=0;i<arr1.length;i++){
+   if(arr1[i]==arr1[i+1]){
+     count++;
+   }
+   else{
+     newcount=count;
+     count=1;
+     if(newcount>precount){
+       ans=arr1[i];
+       precount=newcount;
+      
+     }
+   }
+ }
+ 
+ console.log(ans)
+```
