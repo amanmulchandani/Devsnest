@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #fffdf3;
+}
+
+.button-section{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.title{
+    font-weight: 700;
+}
+.subtitle{
+    font-weight: 600;
+}
+
+.button{
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: royalblue;
+    user-select: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.seat{
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(177, 187, 218, 0.5);
+    cursor: pointer;
+}
