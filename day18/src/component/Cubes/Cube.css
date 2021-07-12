@@ -1,0 +1,14 @@
+.white{
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.81);
+    box-shadow: -5px -5px 5px rgba(0,0,0, 0.2) inset;
+}
+
+.black{
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: -2.5px -2.5px 5px rgba(255,255,255, 0.2) inset,
+                5px 5px 10px rgba(0,0,0, 0.8) inset;
+}

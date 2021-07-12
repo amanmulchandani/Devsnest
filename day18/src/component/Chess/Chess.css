@@ -1,0 +1,7 @@
+.chessboard{
+    /* height: 100px;
+    width: 132px; */
+    border: 1rem outset rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
