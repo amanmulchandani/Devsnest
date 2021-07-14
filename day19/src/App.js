@@ -1,9 +1,10 @@
 import React from 'react'
+import Buttons from './components/Buttons/Buttons'
 
 const App = () => {
   return (
     <div>
-      Hello World!
+      <Buttons/>
     </div>
   )
 }
