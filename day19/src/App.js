@@ -1,10 +1,11 @@
 import React from 'react'
-import Buttons from './components/Buttons/Buttons'
+
+import Box from './components/Box/Box'
 
 const App = () => {
   return (
     <div>
-      <Buttons/>
+      <Box/>
     </div>
   )
 }
