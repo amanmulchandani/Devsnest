@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./App.css";
 
-import Box from './components/Box/Box'
+import Box from "./components/Box/Box";
 
 const App = () => {
   return (
     <div>
-      <Box/>
+      <Box />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
