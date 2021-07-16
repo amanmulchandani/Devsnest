@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Poppins Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-    crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <title>Assignment Navigation</title>
     <style>
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.card{
-    height: 60px;
-    width: 120px;
-    background: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.1), 5px 5px 10px rgba(255,255,255,0.1) inset; */
-    margin: 10px;
-    user-select: none;
-
-    /* Anchor Tag */
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    color: rgb(105, 105, 105); 
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.card:hover{
-    color: rgba(255, 68, 0, 0.8);
-}
-
-@media(max-width: 640px) {
-    .content{
+      .content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-    </style>
-</head>
-<body>
-    <section class="content">
-        <a class="card" href="./Day 01/">Day 01</a>
-        <a class="card" href="./Day 02/">Day 02</a>
-        <a class="card" href="./Day 03/">Day 03</a>
-        <a class="card" href="./Day 04/">Day 04</a>
-        <a class="card" href="./Day 05/">Day 05</a>
-        <a class="card" href="https://github.com/mulchandaniaman/Devsnest/tree/main/Day%2006">Day 06</a>
-        <a class="card" href="https://github.com/mulchandaniaman/Devsnest/tree/main/Day%2007">Day 07</a>
-        <a class="card" href="./Day 08/">Day 08</a>
-        <a class="card" href="./Day 09/">Day 09</a>
-        <a class="card" href="./Day 10/">Day 10</a>
-        <a class="card" href="./Day 11/">Day 11</a>
-        <a class="card" href="./Day 12/">Day 12</a>
-        <a class="card" href="./Day 13/">Day 13</a>
-        <a class="card" href="./Day 14/">Day 14</a>
-        <a class="card" href="./Day 15/">Day 15</a>
-        <a class="card" href="./day16/build/">Day 16</a>
-        <a class="card" href="./day17/build/">Day 17</a>
-        <a class="card" href="./day18/build/">Day 18</a>
-        <a class="card" href="./day19/build/">Day 19</a>
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
 
+      .card {
+        height: 60px;
+        width: 120px;
+        background: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        /* box-shadow: 5px 5px 10px rgba(0,0,0,0.1), 5px 5px 10px rgba(255,255,255,0.1) inset; */
+        margin: 10px;
+        user-select: none;
+
+        /* Anchor Tag */
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        color: rgb(105, 105, 105);
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+
+      .card:hover {
+        color: rgba(255, 68, 0, 0.8);
+      }
+
+      @media (max-width: 640px) {
+        .content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="content">
+      <a class="card" href="./Day 01/">Day 01</a>
+      <a class="card" href="./Day 02/">Day 02</a>
+      <a class="card" href="./Day 03/">Day 03</a>
+      <a class="card" href="./Day 04/">Day 04</a>
+      <a class="card" href="./Day 05/">Day 05</a>
+      <a
+        class="card"
+        href="https://github.com/mulchandaniaman/Devsnest/tree/main/Day%2006"
+        >Day 06</a
+      >
+      <a
+        class="card"
+        href="https://github.com/mulchandaniaman/Devsnest/tree/main/Day%2007"
+        >Day 07</a
+      >
+      <a class="card" href="./Day 08/">Day 08</a>
+      <a class="card" href="./Day 09/">Day 09</a>
+      <a class="card" href="./Day 10/">Day 10</a>
+      <a class="card" href="./Day 11/">Day 11</a>
+      <a class="card" href="./Day 12/">Day 12</a>
+      <a class="card" href="./Day 13/">Day 13</a>
+      <a class="card" href="./Day 14/">Day 14</a>
+      <a class="card" href="./Day 15/">Day 15</a>
+      <a class="card" href="./day16/build/">Day 16</a>
+      <a class="card" href="./day17/build/">Day 17</a>
+      <a class="card" href="./day18/build/">Day 18</a>
+      <a class="card" href="./day19/build/">Day 19</a>
     </section>
 
     <!-- <script src="app.js" "></script> -->
-</body>
+  </body>
 </html>

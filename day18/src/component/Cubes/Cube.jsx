@@ -1,16 +1,12 @@
-import React from 'react'
-import './Cube.css'
+import React from "react";
+import "./Cube.css";
 
 const White = () => {
-    return(
-        <div className="white"></div>
-    )
-}
+  return <div className="white"></div>;
+};
 
 const Black = () => {
-    return(
-        <div className="black"></div>
-    )
-}
+  return <div className="black"></div>;
+};
 
-export {White, Black};
+export { White, Black };
