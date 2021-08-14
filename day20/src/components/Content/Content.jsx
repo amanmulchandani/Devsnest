@@ -1,18 +1,33 @@
-import React from 'react'
-import Card from '../Card/Card'
-import "./Content.css"
+import React, { useState } from "react";
+import Card from "../Card/Card";
+import "./Content.css";
+import Food from "./Food.jsx";
 
 const Content = () => {
-    return (
-        <div className="content">
-        <div className="content-box">
-           <Card name="Pizza" value="500" /> 
-           <Card name="Cake" value="100" /> 
-           <Card name="Burger" value="150" /> 
-           <Card name="Pasta" value="250" /> 
-        </div>
-        </div>
-    )
-}
+  const [state, setState] = useState(Food);
 
-export default Content
+  const foodList = (food, id) => {
+    return (
+      <>
+        <Card
+          state={state}
+          setState={setState}
+          id={food.id}
+          name={food.name}
+          value={food.amount}
+          key={id}
+        />
+      </>
+    );
+  };
+
+  return (
+    <div className="content">
+      <div className="content-box">
+        {state.length > 0 ? state.map(foodList) : "No Objects Left"}
+      </div>
+    </div>
+  );
+};
+
+export default Content;

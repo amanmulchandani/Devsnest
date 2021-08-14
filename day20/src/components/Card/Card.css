@@ -2,14 +2,14 @@
   height: 200px;
   width: 400px;
   border-radius: 10px;
-  background: lightsteelblue;
+  background: rgb(154, 192, 241);
   /* Position */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /* Box Shadow */
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.3),
+  box-shadow: 0px -2px 5px rgba(255, 255, 255, 0.3),
     -5px -5px 10px rgba(0, 0, 0, 0.1) inset;
   margin: 25px;
 }
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.75);
   margin: 10px 0px;
 }
 .value {
@@ -28,4 +28,20 @@
   letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.5);
   margin: 10px 0px;
+}
+
+.delete-btn {
+  margin: 20px;
+  padding: 10px 15px;
+  background: red;
+  border: 2px solid rgba(255, 255, 255, 0.473);
+  color: aliceblue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.delete-btn:active {
+  transform: translatey(1px);
 }
